@@ -1,40 +1,18 @@
-# Worlds Without Number for Foundry VTT (Unofficial)
-Everything you need to play Worlds Without Number in Foundry VTT. This was forked from v1.1.2 of the Old School Essentials project developed by U~man. I have managed to mangle his beautiful project into something that works for Worlds Without Number. All praise should be directed toward him. Any bugs or mistakes are undoubtedly my own.
+# Worlds Without Number for Foundry VTT (Unofficial) - 한글화 버전
 
-Find the original OSE project by U~man here: https://gitlab.com/mesfoliesludiques/foundryvtt-ose
-## Features
-* Calculated Readied/Stowed values, including dynamic tracking of currency weight
-* Calculates total wealth from carried coin, bank, and treaure items
-* Track weapon tags; hovering over the tag icon or name displays the full tag description
-* Track Effort commitment by Art and have class-specific Effort updated automatically
-    * Click Tweaks in the character title bar to activate spellcasting and enter caster class(es)
-* Visual indicator of health/strain percentage
-* Auto-calculate saves for PCs and NPCs alike
-* Calculates movement rates based on Readied/Stowed values
-    * Use standard WWN movement rates or B/X movement
-    * Auto-calc can be disabled
-* Adds attribute bonuses to hit chance, damage, and shock
-    * A per-weapon checkbox enables adding skill value to damage and shock
-* Shock and damage account for attribute bonuses, the Killing Blow warrior ability, and Foci that add skill levels to damage
-    * Click Full Warrior in Tweaks menu to activate Killing Blow
-    * Skill damage is activated on a per-item basis, due to the variable nature of Foci
-* Support for Specialist and other Foci that allow rolling 3d6/4d6 on skill checks
-* Distribute XP through the party sheet
-    * Assign percentage shares to henchmen, to support silver-as-XP (and custom XP values) for B/X-style play
-* Easily roll multiple saving throws from an Art, Spell, or weapon's chat card
-* GM Tools: quickly generate things from the GM Tables in WWN
-    * Currently supports Nation, Government, Society, and History Construction. More will be added in the future.
-* Roll Morale and Instinct checks with two clicks
-    * Link appropriate Instinct tables from Compendium to NPC sheet to auto-roll when Instinct check is failed
-* Compendium includes weapons, armor, adventuring gear, arts, spells, and foci. Deluxe edition content is not included.
-    * Thanks to Gavin over at Necrotic Gnome, the Compendium now includes OSE spells and (some) monsters.
-## License
-This Foundry VTT system requires the Worlds Without Number rules, available at DrivethruRPG.
+수 없는 세계를 FVTT 10버전에서 플레이 하기 위한 모듈입니다. SobranDM의 v1.1.4 버전에서 Fork되었고, 몇 가지를 수정점이 있습니다.
+오리지널 FVTT 모듈은 https://github.com/SobranDM/foundryvtt-wwn 에서 찾을 수 있습니다.
 
-This third party product is not affiliated with or approved by Sine Nomine Publishing.
-Worlds Without Number is a trademark of Sine Nomine Publishing.
+## 오리지널 모듈과의 변경점
+* 많은 것들을 한글화 할 예정입니다.
+* WWN이외의 것들을 전부 삭제했습니다 (SWN이나 OSE 내용을 제거했습니다).
+* 딜럭스 에디션 및 Atlas of the Latter Earth에 나와 있는 번역된 데이터들 포함했습니다. 
+    * 데이터의 공개 관련 저작권 때문에 누군가가 이슈를 올릴 수 있을 여지가 있지만, 일단 Latter Earth를 지칭하는 고유명사 등은 전부 바꿨고, 원문이 아닌 제가 번역한 번역 내용을 기재했습니다. 이 부분에 관해서 질문이 있으면 Issues에 올려주십시오. 
 
-Old School Essentials spells and monsters used with permission under Open Game License, originally adapted from the greatest role playing game in the world.
+## 라이센스
+이 Foundry VTT 모듈의 경우는 DrivethruRPG에서 파는 Worlds Without Number룰 북을 필요로 합니다.
 
-## Artwork
-Icons are from [Rexxard](https://assetstore.unity.com/packages/2d/gui/icons/flat-skills-icons-82713).
+이 모듈은 Sine Nomine Publishing과 아무런 연관이 없습니다. 수 없는 세계는 Sine Nomine Publishing의 트레이드마크입니다. 
+
+## 아이콘 
+Icons은 [Rexxard](https://assetstore.unity.com/packages/2d/gui/icons/flat-skills-icons-82713)로부터 왔습니다.
