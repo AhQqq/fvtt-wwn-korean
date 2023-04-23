@@ -1,17 +1,17 @@
 {
-  "id": "wwn",
-  "title": "Worlds Without Number",
-  "description": "Play Worlds Without Number on Foundry VTT",
-  "version": "1.1.4",
+  "id": "wwn-kor",
+  "title": "Worlds Without Number - Korean",
+  "description": "Worlds Without Number on Foundry VTT in Korean",
+  "version": "1.0.0",
   "compatibility": {
     "minimum": "10",
     "verified": "10.291"
   },
   "authors": [
     {
-      "name": "Aaron Lutomski",
-      "url": "https://github.com/SobranDM",
-      "discord": "Sobran#8580",
+      "name": "Yutae Kim",
+      "url": "https://github.com/AhQqq",
+      "discord": "아큐",
       "flags": {}
     }
   ],
@@ -25,7 +25,7 @@
     {
       "name": "instinct",
       "label": "Instinct",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/instinct.db",
       "type": "RollTable",
       "private": false,
@@ -34,7 +34,7 @@
     {
       "name": "armor",
       "label": "Armor",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/armor.db",
       "type": "Item",
       "private": false,
@@ -43,7 +43,7 @@
     {
       "name": "weapons",
       "label": "Weapons",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/weapons.db",
       "type": "Item",
       "private": false,
@@ -52,7 +52,7 @@
     {
       "name": "arts",
       "label": "Arts",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/arts.db",
       "type": "Item",
       "private": false,
@@ -61,7 +61,7 @@
     {
       "name": "foci",
       "label": "Foci and Abilities",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/foci.db",
       "type": "Item",
       "private": false,
@@ -70,7 +70,7 @@
     {
       "name": "skills",
       "label": "Skills",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/skills.db",
       "type": "Item",
       "private": false,
@@ -79,7 +79,7 @@
     {
       "name": "spells",
       "label": "Spells",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/spells.db",
       "type": "Item",
       "private": false,
@@ -88,7 +88,7 @@
     {
       "name": "adventuring-gear",
       "label": "Adventuring Gear",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/adventuring-gear.db",
       "type": "Item",
       "private": false,
@@ -97,7 +97,7 @@
     {
       "name": "magic-items",
       "label": "Magic Items",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/magic-items.db",
       "type": "Item",
       "private": false,
@@ -106,7 +106,7 @@
     {
       "name": "magic-tables",
       "label": "Magic Item Tables",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/magic-tables.db",
       "type": "RollTable",
       "private": false,
@@ -115,7 +115,7 @@
     {
       "name": "magic-item-masters",
       "label": "Magic Item Masters",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/magic-item-masters.db",
       "type": "RollTable",
       "private": false,
@@ -124,7 +124,7 @@
     {
       "name": "gm-subtables",
       "label": "GM Subtables",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/gm-subtables.db",
       "type": "RollTable",
       "private": false,
@@ -133,7 +133,7 @@
     {
       "name": "gm-master-tables",
       "label": "GM Master Tables",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/gm-master-tables.db",
       "type": "RollTable",
       "private": false,
@@ -142,34 +142,16 @@
     {
       "name": "creatures-of-a-far-age",
       "label": "Creatures of a Far Age",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/creatures-of-a-far-age.db",
       "type": "Actor",
       "private": false,
       "flags": {}
     },
     {
-      "name": "ose-monsters",
-      "label": "OSE Monsters",
-      "system": "wwn",
-      "path": "packs/ose-monsters.db",
-      "type": "Actor",
-      "private": false,
-      "flags": {}
-    },
-    {
-      "name": "ose-spells",
-      "label": "OSE Spells",
-      "system": "wwn",
-      "path": "packs/ose-spells.db",
-      "type": "Item",
-      "private": false,
-      "flags": {}
-    },
-    {
       "name": "tags",
       "label": "Tags",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/tags.db",
       "type": "JournalEntry",
       "private": false,
@@ -178,7 +160,7 @@
     {
       "name": "assets",
       "label": "Assets",
-      "system": "wwn",
+      "system": "wwn-kor",
       "path": "packs/assets.db",
       "type": "Item",
       "private": false,
@@ -191,11 +173,17 @@
       "name": "English",
       "path": "lang/en.json",
       "flags": {}
+    },
+    {
+      "lang": "kr",
+      "name": "Korean",
+      "path": "lang/kr.json",
+      "flags": {}
     }
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
-  "url": "https://github.com/SobranDM/foundryvtt-wwn",
-  "manifest": "https://github.com/SobranDM/foundryvtt-wwn/releases/latest/download/system.json",
-  "download": "https://github.com/SobranDM/foundryvtt-wwn/releases/download/v1.1.4/wwn.zip"
+  "url": "https://github.com/AhQqq/fvtt-wwn-korean",
+  "manifest": "https://github.com/AhQqq/fvtt-wwn-korean/releases/latest/download/system.json",
+  "download": "https://github.com/AhQqq/fvtt-wwn-korean/releases/download/v1.1.4/wwn.zip"
 }

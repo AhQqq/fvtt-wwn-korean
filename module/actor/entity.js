@@ -1091,17 +1091,11 @@ export class WwnActor extends Actor {
       "survive",
       "trade",
       "work",
-      "biopsionics",
-      "metapsionics",
-      "precognition",
-      "telekinesis",
-      "telepathy",
-      "teleportation",
     ];
     const skills = skillList.map((el) => {
       const skillKey = `WWN.skills.${el}`;
       const skillDesc = `WWN.skills.desc.${el}`;
-      const imagePath = `/systems/wwn/assets/skills/${el}.png`;
+      const imagePath = `/systems/wwn-kor/assets/skills/${el}.png`;
       return {
         type: "skill",
         name: game.i18n.localize(skillKey),
