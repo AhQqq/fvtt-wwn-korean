@@ -6,7 +6,7 @@ export class WwnPartySheet extends FormApplication {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["wwn", "dialog", "party-sheet"],
-      template: "systems/wwn/templates/apps/party-sheet.html",
+      template: "systems/wwn-kor/templates/apps/party-sheet.html",
       width: 350,
       height: 450,
       resizable: true,
@@ -64,7 +64,7 @@ export class WwnPartySheet extends FormApplication {
   }
 
   async _selectActors(ev) {
-    const template = "systems/wwn/templates/apps/party-select.html";
+    const template = "systems/wwn-kor/templates/apps/party-select.html";
     const templateData = {
       actors: this.object.documents
     }

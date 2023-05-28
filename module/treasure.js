@@ -83,13 +83,13 @@ async function rollTreasure(table, options = {}) {
   }
 
   let html = await renderTemplate(
-    "systems/wwn/templates/chat/roll-treasure.html",
+    "systems/wwn-kor/templates/chat/roll-treasure.html",
     templateData
   );
 
   let chatData = {
     content: html,
-    // sound: "systems/wwn/assets/coins.mp3"
+    // sound: "systems/wwn-kor/assets/coins.mp3"
   }
 
   let rollMode = game.settings.get("core", "rollMode");

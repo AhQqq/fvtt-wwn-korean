@@ -71,7 +71,7 @@ export class WwnDice {
     form = null,
     rollTitle = null
   } = {}) {
-    const template = "systems/wwn/templates/chat/roll-result.html";
+    const template = "systems/wwn-kor/templates/chat/roll-result.html";
 
     let chatData = {
       user: game.user.id,
@@ -180,7 +180,7 @@ export class WwnDice {
     rollTitle = null,
     dmgTitle = null
   } = {}) {
-    const template = "systems/wwn/templates/chat/roll-attack.html";
+    const template = "systems/wwn-kor/templates/chat/roll-attack.html";
 
     let chatData = {
       user: game.user.id,
@@ -278,7 +278,7 @@ export class WwnDice {
     title = null,
   } = {}) {
     let rolled = false;
-    const template = "systems/wwn/templates/chat/roll-dialog.html";
+    const template = "systems/wwn-kor/templates/chat/roll-dialog.html";
     let dialogData = {
       formula: parts.join(" "),
       data: data,
@@ -340,7 +340,7 @@ export class WwnDice {
     dmgTitle = null,
   } = {}) {
     let rolled = false;
-    const template = "systems/wwn/templates/chat/roll-dialog.html";
+    const template = "systems/wwn-kor/templates/chat/roll-dialog.html";
     let dialogData = {
       formula: parts.join(" "),
       data: data,

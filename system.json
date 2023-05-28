@@ -59,10 +59,19 @@
       "flags": {}
     },
     {
-      "name": "foci",
-      "label": "Foci and Abilities",
+      "name": "focus",
+      "label": "Foci",
       "system": "wwn-kor",
-      "path": "packs/foci.db",
+      "path": "packs/focus.db",
+      "type": "Item",
+      "private": false,
+      "flags": {}
+    },
+    {
+      "name": "abilities",
+      "label": "Abilities",
+      "system": "wwn-kor",
+      "path": "packs/abilities.db",
       "type": "Item",
       "private": false,
       "flags": {}

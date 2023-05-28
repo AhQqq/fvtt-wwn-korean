@@ -129,7 +129,7 @@ async function applyChatCardDamage(roll, multiplier, index) {
       image: image
   };
 
-  const template = "systems/wwn/templates/chat/apply-damage.html";
+  const template = "systems/wwn-kor/templates/chat/apply-damage.html";
   const html = await renderTemplate(template, templateData);
 
   const chatData = {

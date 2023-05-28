@@ -4,7 +4,7 @@ export class WwnAdjustCurrency extends FormApplication {
     const options = super.defaultOptions;
     options.id = 'sheet-tweaks';
     options.template =
-      'systems/wwn/templates/actors/dialogs/adjust-currency.html';
+      'systems/wwn-kor/templates/actors/dialogs/adjust-currency.html';
     options.width = 280;
     return options;
   }

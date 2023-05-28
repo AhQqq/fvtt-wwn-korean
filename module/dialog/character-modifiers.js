@@ -7,7 +7,7 @@ export class WwnCharacterModifiers extends FormApplication {
     options.classes = ["wwn", "dialog", "modifiers"],
     options.id = 'sheet-modifiers';
     options.template =
-      'systems/wwn/templates/actors/dialogs/modifiers-dialog.html';
+      'systems/wwn-kor/templates/actors/dialogs/modifiers-dialog.html';
     options.width = 240;
     return options;
   }

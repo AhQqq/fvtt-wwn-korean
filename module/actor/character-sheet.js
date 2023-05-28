@@ -21,7 +21,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
       classes: ["wwn", "sheet", "actor", "character"],
-      template: "systems/wwn/templates/actors/character-sheet.html",
+      template: "systems/wwn-kor/templates/actors/character-sheet.html",
       width: 755,
       height: 625,
       resizable: false,
@@ -160,7 +160,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
 
     let templateData = { choices: choices },
       dlg = await renderTemplate(
-        "systems/wwn/templates/actors/dialogs/lang-create.html",
+        "systems/wwn-kor/templates/actors/dialogs/lang-create.html",
         templateData
       );
     //Create Dialog window
@@ -191,7 +191,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
   async _chooseItemType(choices = ["focus", "ability"]) {
     let templateData = { types: choices },
       dlg = await renderTemplate(
-        "systems/wwn/templates/items/entity-create.html",
+        "systems/wwn-kor/templates/items/entity-create.html",
         templateData
       );
     //Create Dialog window

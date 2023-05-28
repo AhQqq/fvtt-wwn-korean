@@ -7,7 +7,7 @@ export class WwnCharacterCreator extends FormApplication {
     options.classes = ["wwn", "dialog", "creator"],
       options.id = 'character-creator';
     options.template =
-      'systems/wwn/templates/actors/dialogs/character-creation.html';
+      'systems/wwn-kor/templates/actors/dialogs/character-creation.html';
     options.width = 235;
     return options;
   }

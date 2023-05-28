@@ -6,7 +6,7 @@ export class WwnEntityTweaks extends FormApplication {
     const options = super.defaultOptions;
     options.id = 'sheet-tweaks';
     options.template =
-      'systems/wwn/templates/actors/dialogs/tweaks-dialog.html';
+      'systems/wwn-kor/templates/actors/dialogs/tweaks-dialog.html';
     options.width = 580;
     return options;
   }
