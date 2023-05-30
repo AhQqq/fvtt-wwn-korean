@@ -16,10 +16,10 @@
     }
   ],
   "esmodules": [
-    "wwn.js"
+    "wwn-kor.js"
   ],
   "styles": [
-    "wwn.css"
+    "wwn-kor.css"
   ],
   "packs": [
     {
@@ -178,15 +178,15 @@
   ],
   "languages": [
     {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json",
-      "flags": {}
-    },
-    {
       "lang": "kr",
       "name": "Korean",
       "path": "lang/kr.json",
+      "flags": {}
+    },
+    {
+      "lang": "en",
+      "name": "English",
+      "path": "lang/en.json",
       "flags": {}
     }
   ],
@@ -194,5 +194,5 @@
   "gridUnits": "ft",
   "url": "https://github.com/AhQqq/fvtt-wwn-korean",
   "manifest": "https://github.com/AhQqq/fvtt-wwn-korean/releases/latest/download/system.json",
-  "download": "https://github.com/AhQqq/fvtt-wwn-korean/releases/download/v1.1.4/wwn.zip"
+  "download": "https://github.com/AhQqq/fvtt-wwn-korean/releases/download/v1.0.0/wwn.zip"
 }

@@ -1122,7 +1122,7 @@ export class WwnActor extends Actor {
     if (data.type === "character" && game.userId == user) {
       // If there are no skills, add ones from compendium
       if (!data.items.filter((i) => i.type == "skill").length) {
-        let skillPack = game.packs.get("wwn.skills");
+        let skillPack = game.packs.get("wwn-kor.skills");
         let toAdd = await skillPack.getDocuments();
         let primarySkills = toAdd
           .filter((i) => i.system.secondary == false)

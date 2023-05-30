@@ -1,7 +1,7 @@
 <form class="{{cssClass}}" autocomplete="off">
   {{! Sheet Header }}
   <header class="sheet-header flexrow">
-    {{> "systems/wwn/templates/actors/partials/character-header.html"}}
+    {{> "systems/wwn-kor/templates/actors/partials/character-header.html"}}
   </header>
 
   {{! Sheet Tab Navigation }}
@@ -25,18 +25,18 @@
   <section class="sheet-body">
     {{! Attributes Tab }}
     <div class="tab" data-group="primary" data-tab="attributes">
-      {{> "systems/wwn/templates/actors/partials/character-attributes-tab.html"}}
+      {{> "systems/wwn-kor/templates/actors/partials/character-attributes-tab.html"}}
     </div>
     {{#if system.spells.enabled}}
     <div class="tab" data-group="primary" data-tab="spells">
-      {{> "systems/wwn/templates/actors/partials/character-spells-tab.html"}}
+      {{> "systems/wwn-kor/templates/actors/partials/character-spells-tab.html"}}
     </div>
     {{/if}}
     <div class="tab" data-group="primary" data-tab="inventory">
-      {{> "systems/wwn/templates/actors/partials/character-inventory-tab.html"}}
+      {{> "systems/wwn-kor/templates/actors/partials/character-inventory-tab.html"}}
     </div>
     <div class="tab" data-group="primary" data-tab="notes">
-      {{> "systems/wwn/templates/actors/partials/character-notes-tab.html"}}
+      {{> "systems/wwn-kor/templates/actors/partials/character-notes-tab.html"}}
     </div>
   </section>
 </form>
