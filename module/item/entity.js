@@ -7,13 +7,13 @@ export class WwnItem extends Item {
   // Replacing default image
   static get defaultIcons() {
     return {
-      spell: "/systems/wwn/assets/default/spell.png",
-      ability: "/systems/wwn/assets/default/ability.png",
-      armor: "/systems/wwn/assets/default/armor.png",
-      weapon: "/systems/wwn/assets/default/weapon.png",
-      item: "/systems/wwn/assets/default/item.png",
-      focus: "/systems/wwn/assets/default/focus.png",
-      art: "/systems/wwn/assets/default/art.png",
+      spell: "/systems/wwn-kor/assets/others/spell.png",
+      ability: "/systems/wwn-kor/assets/others/ability.png",
+      armor: "/systems/wwn-kor/assets/others/armor.png",
+      weapon: "/systems/wwn-kor/assets/others/weapon.png",
+      item: "/systems/wwn-kor/assets/others/item.png",
+      focus: "/systems/wwn-kor/assets/others/focus.png",
+      art: "/systems/wwn-kor/assets/others/art.png",
     };
   }
 
@@ -91,7 +91,7 @@ export class WwnItem extends Item {
   }
 
   async rollSkill(options = {}) {
-    const template = "systems/wwn/templates/items/dialogs/roll-skill.html";
+    const template = "systems/wwn-kor/templates/items/dialogs/roll-skill.html";
     const dialogData = {
       defaultScore: this.system.score,
       dicePool: this.system.skillDice,
@@ -469,7 +469,7 @@ export class WwnItem extends Item {
     };
 
     // Render the chat card template
-    const template = `systems/wwn/templates/chat/item-card.html`;
+    const template = `systems/wwn-kor/templates/chat/item-card.html`;
     const html = await renderTemplate(template, templateData);
 
     // Basic chat message data

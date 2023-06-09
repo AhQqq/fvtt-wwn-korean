@@ -35,7 +35,7 @@ export class WwnItemSheet extends ItemSheet {
 
   /** @override */
   get template() {
-    const path = "systems/wwn/templates/items/";
+    const path = "systems/wwn-kor/templates/items/";
     return `${path}/${this.item.type}-sheet.html`;
   }
 
