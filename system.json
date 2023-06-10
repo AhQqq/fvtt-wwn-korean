@@ -183,12 +183,6 @@
       "path": "lang/kr.json",
       "flags": {}
     },
-    {
-      "lang": "en",
-      "name": "English",
-      "path": "lang/en.json",
-      "flags": {}
-    }
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
