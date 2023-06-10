@@ -79,7 +79,7 @@ import { WwnBaseItem } from "./base-item.js";
       attackSpecial: this.system.attackSpecial,
       assetsWithLocationNotes
     };
-    const template = "systems/wwn/templates/chat/asset-attack.html";
+    const template = "systems/wwn-kor/templates/chat/asset-attack.html";
     const chatContent = await renderTemplate(template, dialogData);
 
     if (this.actor?.type == "faction") {
@@ -149,7 +149,7 @@ import { WwnBaseItem } from "./base-item.js";
       targetFactionsIdNames: factionIdNames,
       targets: targetFactions,
     };
-    const template = "systems/wwn/templates/items/dialogs/select-asset-target.html";
+    const template = "systems/wwn-kor/templates/items/dialogs/select-asset-target.html";
     const html = renderTemplate(template, dialogData);
 
     const _rollForm = async (html) => {
@@ -231,7 +231,7 @@ import { WwnBaseItem } from "./base-item.js";
         attackedAssetsWithLocationNotes,
         attackingAssetsWithLocationNotes,
       };
-      const template = "systems/wwn/templates/chat/asset-attack-def.html";
+      const template = "systems/wwn-kor/templates/chat/asset-attack-def.html";
       const chatContent = await renderTemplate(template, dialogData);
       if (this.actor?.type == "faction") {
         this.actor.logMessage(name, chatContent);

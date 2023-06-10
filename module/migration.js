@@ -73,7 +73,7 @@ export const migrateWorld = async function () {
     await pack.configure({ locked: wasLocked });
   }
   // Set the migration as complete
-  game.settings.set("wwn", "systemMigrationVersion", game.system.version);
+  game.settings.set("wwn-kor", "systemMigrationVersion", game.system.version);
   ui.notifications.info(`WWN System Migration to version ${game.system.version} completed!`, { permanent: true });
 };
 

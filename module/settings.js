@@ -1,6 +1,6 @@
 export const registerSettings = function () {
 
-  game.settings.register("wwn", "randomHP", {
+  game.settings.register("wwn-kor", "randomHP", {
     name: game.i18n.localize("WWN.Setting.RandomHP"),
     hint: game.i18n.localize("WWN.Setting.RandomHPHint"),
     default: false,
@@ -10,7 +10,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "initiative", {
+  game.settings.register("wwn-kor", "initiative", {
     name: game.i18n.localize("WWN.Setting.Initiative"),
     hint: game.i18n.localize("WWN.Setting.InitiativeHint"),
     default: "group",
@@ -24,7 +24,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "rerollInitiative", {
+  game.settings.register("wwn-kor", "rerollInitiative", {
     name: game.i18n.localize("WWN.Setting.RerollInitiative"),
     hint: game.i18n.localize("WWN.Setting.RerollInitiativeHint"),
     default: "keep",
@@ -38,7 +38,7 @@ export const registerSettings = function () {
     }
   });
 
-  game.settings.register("wwn", "movementRate", {
+  game.settings.register("wwn-kor", "movementRate", {
     name: game.i18n.localize("WWN.Setting.MovementRate"),
     hint: game.i18n.localize("WWN.Setting.MovementRateHint"),
     default: "movewwn",
@@ -52,7 +52,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "showMovement", {
+  game.settings.register("wwn-kor", "showMovement", {
     name: game.i18n.localize("WWN.Setting.showMovement"),
     hint: game.i18n.localize("WWN.Setting.showMovementHint"),
     default: false,
@@ -62,7 +62,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "morale", {
+  game.settings.register("wwn-kor", "morale", {
     name: game.i18n.localize("WWN.Setting.Morale"),
     hint: game.i18n.localize("WWN.Setting.MoraleHint"),
     default: true,
@@ -80,7 +80,7 @@ export const registerSettings = function () {
     config: true
   });
 
-  game.settings.register("wwn", "languageList", {
+  game.settings.register("wwn-kor", "languageList", {
     name: game.i18n.localize("WWN.Languages"),
     hint: game.i18n.localize("WWN.LanguagesHint"),
     default: "Trade Cant,Ancient Vothian,Old Vothian,Modern Vothian,Ancient Olok,Brass Speech,Ancient Lin,Emedian,Ancient Osrin,Thurian,Ancient Khalan,Llaigisan,Anak Speech,Predecessant,Abased,Recurrent,Deep Speech",
@@ -89,7 +89,7 @@ export const registerSettings = function () {
     config: true,
   });
 
-  game.settings.register("wwn", "xpConfig", {
+  game.settings.register("wwn-kor", "xpConfig", {
     name: game.i18n.localize("WWN.Setting.xpConfig"),
     hint: game.i18n.localize("WWN.Setting.xpConfigHint"),
     default: "xpFast",
@@ -104,7 +104,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "xpCustomList", {
+  game.settings.register("wwn-kor", "xpCustomList", {
     name: game.i18n.localize("WWN.Setting.xpCustomList"),
     hint: game.i18n.localize("WWN.Setting.xpCustomListHint"),
     default: [
@@ -128,7 +128,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "currencyTypes", {
+  game.settings.register("wwn-kor", "currencyTypes", {
     name: game.i18n.localize("WWN.items.Currency"),
     hint: game.i18n.localize("WWN.items.CurrencyHint"),
     default: "currencywwn",
@@ -142,7 +142,7 @@ export const registerSettings = function () {
     requiresReload: true
   });
 
-  game.settings.register("wwn", "systemMigrationVersion", {
+  game.settings.register("wwn-kor", "systemMigrationVersion", {
     config: false,
     scope: "world",
     type: String,

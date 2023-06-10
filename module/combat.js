@@ -8,7 +8,7 @@ export class WwnCombat {
     let alertGroups = {};
 
     combat.combatants.forEach((cbt) => {
-      const group = cbt.getFlag("wwn", "group");
+      const group = cbt.getFlag("wwn-kor", "group");
       groups[group] = { present: true };
       data.combatants.push(cbt);
       let alert = cbt.actor.items.filter((a) => a.name == "Alert");
@@ -50,7 +50,7 @@ export class WwnCombat {
       if (!data.combatants[i].actor) {
         return;
       }
-      const group = data.combatants[i].getFlag("wwn", "group");
+      const group = data.combatants[i].getFlag("wwn-kor", "group");
       let alert = data.combatants[i].actor.items.filter((a) => a.name == "Alert");
       data.combatants[i].update({ initiative: groups[group].initiative });
       if (alert.length > 0) {
@@ -63,7 +63,7 @@ export class WwnCombat {
   }
 
   static async resetInitiative(combat, data) {
-    let reroll = game.settings.get("wwn", "rerollInitiative");
+    let reroll = game.settings.get("wwn-kor", "rerollInitiative");
     if (!["reset", "reroll"].includes(reroll)) {
       return;
     }
@@ -126,7 +126,7 @@ export class WwnCombat {
           : span.innerHTML;
     });
 
-    let init = game.settings.get("wwn", "initiative") === "group";
+    let init = game.settings.get("wwn-kor", "initiative") === "group";
     if (!init) {
       return;
     }
@@ -146,7 +146,7 @@ export class WwnCombat {
 
       // Get group color
       const cmbtant = object.viewed.combatants.get(ct.dataset.combatantId);
-      let color = cmbtant.getFlag("wwn", "group");
+      let color = cmbtant.getFlag("wwn-kor", "group");
 
       // Append colored flag
       let controls = $(ct).find(".combatant-controls");
@@ -158,7 +158,7 @@ export class WwnCombat {
   }
 
   static updateCombatant(combat, combatant, data) {
-    let init = game.settings.get("wwn", "initiative");
+    let init = game.settings.get("wwn-kor", "initiative");
     // Why do you reroll ?
     if (data.initiative && init == "group") {
       let groupInit = data.initiative;
@@ -249,8 +249,8 @@ export class WwnCombat {
   }
 
   static async preUpdateCombat(combat, data, diff, id) {
-    const init = game.settings.get("wwn", "initiative");
-    const reroll = game.settings.get("wwn", "rerollInitiative");
+    const init = game.settings.get("wwn-kor", "initiative");
+    const reroll = game.settings.get("wwn-kor", "rerollInitiative");
     /*if (!data.round) {
       return;
     }*/
@@ -282,7 +282,7 @@ export class WwnCombat {
   static async preCreateToken(token, data, options, userId) {
     const scene = token.parent;
     const actor = game.actors.get(data.actorId);
-    if (!actor || data.actorLink || !game.settings.get("wwn", "randomHP")) {
+    if (!actor || data.actorLink || !game.settings.get("wwn-kor", "randomHP")) {
       return token.updateSource(data);
     }
     const roll = new Roll(token.actor.system.hp.hd).roll({ async: false });

@@ -52,7 +52,7 @@ export class WwnDice {
         const pattern = /\[(.+)\.([\w]+)\]/;
         const iA = iL.match(pattern);
         const pack = game.packs.get(iA[1]);
-        if ( game.settings.get("wwn", "hideInstinct") ) {
+        if ( game.settings.get("wwn-kor", "hideInstinct") ) {
           pack.getDocument(iA[2]).then(table => table.draw({rollMode: "gmroll"}));
         } else {
           pack.getDocument(iA[2]).then(table => table.draw());

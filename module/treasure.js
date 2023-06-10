@@ -1,15 +1,15 @@
 export const augmentTable = (table, html, data) => {
   // Treasure Toggle
   let head = html.find(".sheet-header");
-  const flag = table.object.getFlag("wwn", "treasure");
+  const flag = table.object.getFlag("wwn-kor", "treasure");
   const treasure = flag
     ? "<div class='toggle-treasure active'></div>"
     : "<div class='toggle-treasure'></div>";
   head.append(treasure);
 
   html.find(".toggle-treasure").click((ev) => {
-    let isTreasure = table.object.getFlag("wwn", "treasure");
-    table.object.setFlag("wwn", "treasure", !isTreasure);
+    let isTreasure = table.object.getFlag("wwn-kor", "treasure");
+    table.object.setFlag("wwn-kor", "treasure", !isTreasure);
   });
 
   // Treasure table formatting
