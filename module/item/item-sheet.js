@@ -17,7 +17,7 @@ export class WwnItemSheet extends ItemSheet {
    */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["wwn", "sheet", "item"],
+      classes: ["wwn-kor", "sheet", "item"],
       width: 550,
       height: 510,
       resizable: true,
