@@ -2,7 +2,7 @@ export class WwnPartyXP extends FormApplication {
 
     static get defaultOptions() {
         return foundry.utils.mergeObject(super.defaultOptions, {
-            classes: ["wwn", "dialog", "party-xp"],
+            classes: ["wwn-kor", "dialog", "party-xp"],
             template: "systems/wwn-kor/templates/apps/party-xp.html",
             width: 280,
             height: 400,

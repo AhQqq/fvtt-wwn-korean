@@ -4,7 +4,7 @@ import { WwnDice } from "../dice.js";
 export class WwnCharacterCreator extends FormApplication {
   static get defaultOptions() {
     const options = super.defaultOptions;
-    options.classes = ["wwn", "dialog", "creator"],
+    options.classes = ["wwn-kor", "dialog", "creator"],
       options.id = 'character-creator';
     options.template =
       'systems/wwn-kor/templates/actors/dialogs/character-creation.html';

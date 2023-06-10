@@ -37,7 +37,7 @@ export class WwnFaction extends Actor {
   async _onCreate() {
     await this.update({
       "token.actorLink": true,
-      "img" : "systems/wwn/assets/default/faction.png"
+      "img" : "systems/wwn-kor/assets/others/faction.png"
     });
   }
 
@@ -100,7 +100,7 @@ export class WwnFaction extends Actor {
       longContent,
       logRollString,
     };
-    const template = "systems/wwn/templates/chat/faction-log.html";
+    const template = "systems/wwn-kor/templates/chat/faction-log.html";
 
     const chatData = {
       speaker: ChatMessage.getSpeaker({ actor: this }),

@@ -4,7 +4,7 @@ import { WwnActor } from '../actor/entity.js';
 export class WwnCharacterModifiers extends FormApplication {
   static get defaultOptions() {
     const options = super.defaultOptions;
-    options.classes = ["wwn", "dialog", "modifiers"],
+    options.classes = ["wwn-kor", "dialog", "modifiers"],
     options.id = 'sheet-modifiers';
     options.template =
       'systems/wwn-kor/templates/actors/dialogs/modifiers-dialog.html';

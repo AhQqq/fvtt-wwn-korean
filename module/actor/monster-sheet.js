@@ -18,8 +18,8 @@ export class WwnActorSheetMonster extends WwnActorSheet {
    */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["wwn", "sheet", "monster", "actor"],
-      template: "systems/wwn/templates/actors/monster-sheet.html",
+      classes: ["wwn-kor", "sheet", "monster", "actor"],
+      template: "systems/wwn-kor/templates/actors/monster-sheet.html",
       width: 730,
       height: 625,
       resizable: false,
@@ -127,7 +127,7 @@ _prepareItems(data) {
     this._prepareItems(data);
 
     // Settings
-    data.config.morale = game.settings.get("wwn", "morale");
+    data.config.morale = game.settings.get("wwn-kor", "morale");
     if (!data.system.details.hasOwnProperty('instinctTable')) {
       data.system.details.instinctTable = {
         "table": "",
@@ -166,7 +166,7 @@ _prepareItems(data) {
   async _chooseItemType(choices = ["weapon", "armor", "shield", "item", "ability"]) {
     let templateData = { types: choices },
       dlg = await renderTemplate(
-        "systems/wwn/templates/items/entity-create.html",
+        "systems/wwn-kor/templates/items/entity-create.html",
         templateData
       );
     //Create Dialog window

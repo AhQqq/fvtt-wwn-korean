@@ -588,7 +588,7 @@ export class WwnActor extends Actor {
 
   computeInit() {
     let initValue = 0;
-    if (game.settings.get("wwn", "initiative") != "group") {
+    if (game.settings.get("wwn-kor", "initiative") != "group") {
       if (this.type == "character") {
         initValue = this.system.scores.dex.mod + this.system.initiative.mod;
       } else {
@@ -607,7 +607,7 @@ export class WwnActor extends Actor {
     let level = data.details.level - 1;
 
     // Retrieve XP Settings
-    switch (game.settings.get("wwn", "xpConfig")) {
+    switch (game.settings.get("wwn-kor", "xpConfig")) {
       case "xpSlow":
         xpRate = [6, 15, 24, 36, 51, 69, 87, 105, 139];
         break;
@@ -615,7 +615,7 @@ export class WwnActor extends Actor {
         xpRate = [3, 6, 12, 18, 27, 39, 54, 72, 93];
         break;
       case "xpCustom":
-        xpRate = game.settings.get("wwn", "xpCustomList").split(",");
+        xpRate = game.settings.get("wwn-kor", "xpCustomList").split(",");
         break;
     }
 
@@ -703,7 +703,7 @@ export class WwnActor extends Actor {
       }
     });
 
-    if (game.settings.get("wwn", "currencyTypes") == "currencybx") {
+    if (game.settings.get("wwn-kor", "currencyTypes") == "currencybx") {
       const coinWeight =
         (data.currency.cp +
           data.currency.sp +
@@ -738,7 +738,7 @@ export class WwnActor extends Actor {
       const bonus = data.movement.bonus;
 
       let systemBase = [];
-      game.settings.get("wwn", "movementRate") == "movebx"
+      game.settings.get("wwn-kor", "movementRate") == "movebx"
         ? (systemBase = [40, 30, 20])
         : (systemBase = [30, 20, 15]);
 

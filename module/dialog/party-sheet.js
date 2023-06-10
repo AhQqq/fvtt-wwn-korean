@@ -5,7 +5,7 @@ export class WwnPartySheet extends FormApplication {
   
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["wwn", "dialog", "party-sheet"],
+      classes: ["wwn-kor", "dialog", "party-sheet"],
       template: "systems/wwn-kor/templates/apps/party-sheet.html",
       width: 350,
       height: 450,
@@ -47,7 +47,7 @@ export class WwnPartySheet extends FormApplication {
       data = JSON.parse(event.dataTransfer.getData("text/plain"));
       if (data.type === "Actor") {
         const actor = fromUuidSync(data.uuid);
-        actor.setFlag('wwn', 'party', true);
+        actor.setFlag('wwn-kor', 'party', true);
       }
     } catch (err) {
       return false;
@@ -80,7 +80,7 @@ export class WwnPartySheet extends FormApplication {
             let checks = html.find("input[data-action='select-actor']");
             checks.each(async (_, c) => {
               let key = c.getAttribute('name');
-              await this.object.documents[key].setFlag('wwn', 'party', c.checked);
+              await this.object.documents[key].setFlag('wwn-kor', 'party', c.checked);
             });
           },
         },

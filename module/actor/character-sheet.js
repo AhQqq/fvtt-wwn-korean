@@ -20,7 +20,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
    */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["wwn", "sheet", "actor", "character"],
+      classes: ["wwn-kor", "sheet", "actor", "character"],
       template: "systems/wwn-kor/templates/actors/character-sheet.html",
       width: 755,
       height: 625,
@@ -138,9 +138,9 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
   async getData() {
     const data = super.getData();
 
-    data.config.initiative = game.settings.get("wwn", "initiative") != "group";
-    data.config.showMovement = game.settings.get("wwn", "showMovement");
-    data.config.currencyTypes = game.settings.get("wwn", "currencyTypes");
+    data.config.initiative = game.settings.get("wwn-kor", "initiative") != "group";
+    data.config.showMovement = game.settings.get("wwn-kor", "showMovement");
+    data.config.currencyTypes = game.settings.get("wwn-kor", "currencyTypes");
 
     this._prepareItems(data);
     data.enrichedBiography = await TextEditor.enrichHTML(
@@ -155,7 +155,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
   }
 
   async _chooseLang() {
-    const languages = game.settings.get("wwn", "languageList");
+    const languages = game.settings.get("wwn-kor", "languageList");
     const choices = languages.split(",");
 
     let templateData = { choices: choices },
@@ -223,7 +223,7 @@ export class WwnActorSheetCharacter extends WwnActorSheet {
   _pushLang(table) {
     const data = this.actor.system;
     let update = duplicate(data[table]);
-    let language = game.settings.get("wwn", "languageList");
+    let language = game.settings.get("wwn-kor", "languageList");
     let languages = language.split(",");
     this._chooseLang().then((dialogInput) => {
       const name = languages[dialogInput.choice];

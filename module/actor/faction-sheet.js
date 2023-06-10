@@ -23,8 +23,8 @@ export class WwnActorSheetFaction extends WwnActorSheet {
    */
   static get defaultOptions() {
     return foundry.utils.mergeObject(super.defaultOptions, {
-      classes: ["wwn", "sheet", "actor", "faction"],
-      template: "systems/wwn/templates/actors/faction-sheet.html",
+      classes: ["wwn-kor", "sheet", "actor", "faction"],
+      template: "systems/wwn-kor/templates/actors/faction-sheet.html",
       width: 730,
       height: 625,
       resizable: false,
@@ -132,7 +132,7 @@ export class WwnActorSheetFaction extends WwnActorSheet {
         failCallback: () => {
           return;
         },
-        classes: ["wwn"],
+        classes: ["wwn-kor"],
       }
     );
     const s = this.popUpDialog.render(true);
@@ -277,7 +277,7 @@ export class WwnActorSheetFaction extends WwnActorSheet {
         failCallback: () => {
           return;
         },
-        classes: ["wwn"],
+        classes: ["wwn-kor"],
       }
     );
     const s = this.popUpDialog.render(true);
@@ -334,7 +334,7 @@ export class WwnActorSheetFaction extends WwnActorSheet {
         failCallback: () => {
           return;
         },
-        classes: ["wwn"],
+        classes: ["wwn-kor"],
       }
     );
     const s = this.popUpDialog.render(true);
@@ -383,7 +383,7 @@ export class WwnActorSheetFaction extends WwnActorSheet {
         },
       },
       {
-        classes: ["wwn"],
+        classes: ["wwn-kor"],
       }
     );
     this.popUpDialog.render(true);
@@ -445,7 +445,7 @@ export class WwnActorSheetFaction extends WwnActorSheet {
         },
       },
       {
-        classes: ["wwn"],
+        classes: ["wwn-kor"],
       }
     );
     this.popUpDialog.render(true);
