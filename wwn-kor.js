@@ -49,23 +49,23 @@ Hooks.once("init", async function () {
 
   // Register sheet application classes
   Actors.unregisterSheet("core", ActorSheet);
-  Actors.registerSheet("wwn", WwnActorSheetCharacter, {
+  Actors.registerSheet("wwn-kor", WwnActorSheetCharacter, {
     types: ["character"],
     makeDefault: true,
     label: "WWN.SheetClassCharacter"
   });
-  Actors.registerSheet("wwn", WwnActorSheetMonster, {
+  Actors.registerSheet("wwn-kor", WwnActorSheetMonster, {
     types: ["monster"],
     makeDefault: true,
     label: "WWN.SheetClassMonster"
   });
-  Actors.registerSheet("wwn", WwnActorSheetFaction, {
+  Actors.registerSheet("wwn-kor", WwnActorSheetFaction, {
     types: ["faction"],
     makeDefault: true,
     label: "WWN.SheetClassFaction"
   });
   Items.unregisterSheet("core", ItemSheet);
-  Items.registerSheet("wwn", WwnItemSheet, {
+  Items.registerSheet("wwn-kor", WwnItemSheet, {
     makeDefault: true,
     label: "WWN.SheetClassItem"
   });
@@ -118,7 +118,7 @@ Hooks.on("renderSidebarTab", async (object, html) => {
     wwn.append(` <sub><a href="https://oldschoolessentials.necroticgnome.com/srd/index.php">SRD<a></sub>`);
 
     // License text
-    const template = "systems/wwn/templates/chat/license.html";
+    const template = "systems/wwn-kor/templates/chat/license.html";
     const rendered = await renderTemplate(template);
     gamesystem.find(".system").append(rendered);
     
@@ -126,7 +126,7 @@ Hooks.on("renderSidebarTab", async (object, html) => {
 });
 
 Hooks.on("preCreateCombatant", (combat, data, options, id) => {
-  let init = game.settings.get("wwn", "initiative");
+  let init = game.settings.get("wwn-kor", "initiative");
   if(init === "group") {
     WwnCombat.addCombatant(combat, data, options, id);
   }

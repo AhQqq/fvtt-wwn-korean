@@ -17,7 +17,7 @@ export const showPartySheet = (object) => {
 }
 
 export const update = (actor, data) => {
-    if (actor.getFlag('wwn', 'party')) {
+    if (actor.getFlag('wwn-kor', 'party')) {
         Object.values(ui.windows).forEach(w => {
             if (w instanceof WwnPartySheet) {
                 w.render(true);
