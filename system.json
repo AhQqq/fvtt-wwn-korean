@@ -179,10 +179,10 @@
   "languages": [
     {
       "lang": "kr",
-      "name": "Korean",
+      "name": "한국어(Korean)",
       "path": "lang/kr.json",
       "flags": {}
-    },
+    }
   ],
   "gridDistance": 5,
   "gridUnits": "ft",
